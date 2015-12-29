@@ -1,6 +1,6 @@
 == WhichBean 
 
-Learn about that darkness that you start every morning with
+Learn about that darkness that you start every morning with <br>
 Flavour Profiles, Origins, Brew Methods, & more.
 
 --- more to come---
