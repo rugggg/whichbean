@@ -1,0 +1,63 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Beans</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Location</th>
+      <th>Integer</th>
+      <th>Terrain</th>
+      <th>Integer</th>
+      <th>Weather</th>
+      <th>Integer</th>
+      <th>Cultivation</th>
+      <th>Integer</th>
+      <th>Varietal</th>
+      <th>Integer</th>
+      <th>Harvest</th>
+      <th>Integer</th>
+      <th>Preparation</th>
+      <th>Integer</th>
+      <th>Drying</th>
+      <th>Integer</th>
+      <th>Roast</th>
+      <th>Integer</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @beans.each do |bean| %>
+      <tr>
+        <td><%= bean.name %></td>
+        <td><%= bean.location_id %></td>
+        <td><%= bean.integer %></td>
+        <td><%= bean.terrain_id %></td>
+        <td><%= bean.integer %></td>
+        <td><%= bean.weather_id %></td>
+        <td><%= bean.integer %></td>
+        <td><%= bean.cultivation_id %></td>
+        <td><%= bean.integer %></td>
+        <td><%= bean.varietal_id %></td>
+        <td><%= bean.integer %></td>
+        <td><%= bean.harvest_id %></td>
+        <td><%= bean.integer %></td>
+        <td><%= bean.preparation_id %></td>
+        <td><%= bean.integer %></td>
+        <td><%= bean.drying_id %></td>
+        <td><%= bean.integer %></td>
+        <td><%= bean.roast_id %></td>
+        <td><%= bean.integer %></td>
+        <td><%= link_to 'Show', bean %></td>
+        <td><%= link_to 'Edit', edit_bean_path(bean) %></td>
+        <td><%= link_to 'Destroy', bean, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Bean', new_bean_path %>

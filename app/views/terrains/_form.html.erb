@@ -1,0 +1,33 @@
+<%= form_for(@terrain) do |f| %>
+  <% if @terrain.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@terrain.errors.count, "error") %> prohibited this terrain from being saved:</h2>
+
+      <ul>
+      <% @terrain.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :elevation %><br>
+    <%= f.number_field :elevation %>
+  </div>
+  <div class="field">
+    <%= f.label :groundwater %><br>
+    <%= f.number_field :groundwater %>
+  </div>
+  <div class="field">
+    <%= f.label :exposure %><br>
+    <%= f.number_field :exposure %>
+  </div>
+  <div class="field">
+    <%= f.label :flavour_profile_id %><br>
+    <%= f.number_field :flavour_profile_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

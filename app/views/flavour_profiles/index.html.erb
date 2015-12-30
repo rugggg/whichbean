@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Flavour Profiles</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Body</th>
+      <th>Fruit notes</th>
+      <th>Spice notes</th>
+      <th>Chocolate notes</th>
+      <th>Grain notes</th>
+      <th>Roast notes</th>
+      <th>Floral notes</th>
+      <th>Nut notes</th>
+      <th>Sugar notes</th>
+      <th>Savory notes</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @flavour_profiles.each do |flavour_profile| %>
+      <tr>
+        <td><%= flavour_profile.body %></td>
+        <td><%= flavour_profile.fruit_notes %></td>
+        <td><%= flavour_profile.spice_notes %></td>
+        <td><%= flavour_profile.chocolate_notes %></td>
+        <td><%= flavour_profile.grain_notes %></td>
+        <td><%= flavour_profile.roast_notes %></td>
+        <td><%= flavour_profile.floral_notes %></td>
+        <td><%= flavour_profile.nut_notes %></td>
+        <td><%= flavour_profile.sugar_notes %></td>
+        <td><%= flavour_profile.savory_notes %></td>
+        <td><%= link_to 'Show', flavour_profile %></td>
+        <td><%= link_to 'Edit', edit_flavour_profile_path(flavour_profile) %></td>
+        <td><%= link_to 'Destroy', flavour_profile, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Flavour profile', new_flavour_profile_path %>

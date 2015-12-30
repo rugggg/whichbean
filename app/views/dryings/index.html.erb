@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Dryings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Flavour profile</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @dryings.each do |drying| %>
+      <tr>
+        <td><%= drying.method %></td>
+        <td><%= drying.flavour_profile_id %></td>
+        <td><%= link_to 'Show', drying %></td>
+        <td><%= link_to 'Edit', edit_drying_path(drying) %></td>
+        <td><%= link_to 'Destroy', drying, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Drying', new_drying_path %>

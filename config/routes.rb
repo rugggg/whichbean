@@ -1,4 +1,29 @@
 Rails.application.routes.draw do
+  resources :roasts
+  resources :preparations
+  resources :varietals
+  resources :terrains
+  resources :terrains
+  resources :roasts
+  resources :beans
+  resources :preparations
+  resources :beans
+  resources :beans
+  resources :locations
+  resources :harvests
+  resources :dryings
+  resources :flavour_profiles
+  resources :flavour_profiles
+  resources :dryings
+  resources :harvests
+  resources :locations
+  resources :locations
+  resources :harvests
+  resources :harvests
+  resources :dryings
+  resources :flavour_profiles
+  resources :beans
+  resources :beans
   get 'welcome/index'
 
   # The priority is based upon order of creation: first created -> highest priority.

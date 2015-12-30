@@ -1,0 +1,2 @@
+module DryingsHelper
+end

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @roast.name %>
+</p>
+
+<p>
+  <strong>Strength:</strong>
+  <%= @roast.strength %>
+</p>
+
+<p>
+  <strong>Flavour profile:</strong>
+  <%= @roast.flavour_profile_id %>
+</p>
+
+<%= link_to 'Edit', edit_roast_path(@roast) %> |
+<%= link_to 'Back', roasts_path %>

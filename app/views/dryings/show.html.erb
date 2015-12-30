@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Method:</strong>
+  <%= @drying.method %>
+</p>
+
+<p>
+  <strong>Flavour profile:</strong>
+  <%= @drying.flavour_profile_id %>
+</p>
+
+<%= link_to 'Edit', edit_drying_path(@drying) %> |
+<%= link_to 'Back', dryings_path %>

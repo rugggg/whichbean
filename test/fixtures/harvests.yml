@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ripeness: 1
+  flavour_profile_id: 1
+
+two:
+  ripeness: 1
+  flavour_profile_id: 1

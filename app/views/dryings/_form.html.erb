@@ -1,0 +1,25 @@
+<%= form_for(@drying) do |f| %>
+  <% if @drying.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@drying.errors.count, "error") %> prohibited this drying from being saved:</h2>
+
+      <ul>
+      <% @drying.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :method %><br>
+    <%= f.text_field :method %>
+  </div>
+  <div class="field">
+    <%= f.label :flavour_profile_id %><br>
+    <%= f.number_field :flavour_profile_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
