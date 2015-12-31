@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :beans
   resources :roasts
   resources :preparations
   resources :varietals

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151230070115) do
+ActiveRecord::Schema.define(version: 20151231032615) do
 
   create_table "articles", force: :cascade do |t|
     t.string   "title"
@@ -22,16 +22,15 @@ ActiveRecord::Schema.define(version: 20151230070115) do
 
   create_table "beans", force: :cascade do |t|
     t.string   "name"
-    t.string   "location_id"
-    t.string   "integer"
-    t.string   "terrain_id"
-    t.string   "weather_id"
-    t.string   "cultivation_id"
-    t.string   "varietal_id"
-    t.string   "harvest_id"
-    t.string   "preparation_id"
-    t.string   "drying_id"
-    t.string   "roast_id"
+    t.integer  "location_id"
+    t.integer  "terrain_id"
+    t.integer  "weather_id"
+    t.integer  "cultivation_id"
+    t.integer  "varietal_id"
+    t.integer  "harvest_id"
+    t.integer  "preparation_id"
+    t.integer  "drying_id"
+    t.integer  "roast_id"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
   end

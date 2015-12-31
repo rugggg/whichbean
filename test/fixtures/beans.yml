@@ -2,42 +2,24 @@
 
 one:
   name: MyString
-  location_id: MyString
-  integer: MyString
-  terrain_id: MyString
-  integer: MyString
-  weather_id: MyString
-  integer: MyString
-  cultivation_id: MyString
-  integer: MyString
-  varietal_id: MyString
-  integer: MyString
-  harvest_id: MyString
-  integer: MyString
-  preparation_id: MyString
-  integer: MyString
-  drying_id: MyString
-  integer: MyString
-  roast_id: MyString
-  integer: MyString
+  location_id: 1
+  terrain_id: 1
+  weather_id: 1
+  cultivation_id: 1
+  varietal_id: 1
+  harvest_id: 1
+  preparation_id: 1
+  drying_id: 1
+  roast_id: 1
 
 two:
   name: MyString
-  location_id: MyString
-  integer: MyString
-  terrain_id: MyString
-  integer: MyString
-  weather_id: MyString
-  integer: MyString
-  cultivation_id: MyString
-  integer: MyString
-  varietal_id: MyString
-  integer: MyString
-  harvest_id: MyString
-  integer: MyString
-  preparation_id: MyString
-  integer: MyString
-  drying_id: MyString
-  integer: MyString
-  roast_id: MyString
-  integer: MyString
+  location_id: 1
+  terrain_id: 1
+  weather_id: 1
+  cultivation_id: 1
+  varietal_id: 1
+  harvest_id: 1
+  preparation_id: 1
+  drying_id: 1
+  roast_id: 1

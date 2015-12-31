@@ -1,1 +1,1 @@
-json.extract! @bean, :id, :name, :location_id, :integer, :terrain_id, :integer, :weather_id, :integer, :cultivation_id, :integer, :varietal_id, :integer, :harvest_id, :integer, :preparation_id, :integer, :drying_id, :integer, :roast_id, :integer, :created_at, :updated_at
+json.extract! @bean, :id, :name, :location_id, :terrain_id, :weather_id, :cultivation_id, :varietal_id, :harvest_id, :preparation_id, :drying_id, :roast_id, :created_at, :updated_at

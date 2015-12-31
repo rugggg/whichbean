@@ -10,84 +10,51 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
+<div class="container">
+ <div class="form-group">
+  <div class="form-group">
     <%= f.label :name %><br>
     <%= f.text_field :name %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :location_id %><br>
-    <%= f.text_field :location_id %>
+    <%= f.number_field :location_id %>
   </div>
-  <div class="field">
-    <%= f.label :integer %><br>
-    <%= f.text_field :integer %>
-  </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :terrain_id %><br>
-    <%= f.text_field :terrain_id %>
+    <%= f.number_field :terrain_id %>
   </div>
-  <div class="field">
-    <%= f.label :integer %><br>
-    <%= f.text_field :integer %>
-  </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :weather_id %><br>
-    <%= f.text_field :weather_id %>
+    <%= f.number_field :weather_id %>
   </div>
-  <div class="field">
-    <%= f.label :integer %><br>
-    <%= f.text_field :integer %>
-  </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :cultivation_id %><br>
-    <%= f.text_field :cultivation_id %>
+    <%= f.number_field :cultivation_id %>
   </div>
-  <div class="field">
-    <%= f.label :integer %><br>
-    <%= f.text_field :integer %>
-  </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :varietal_id %><br>
-    <%= f.text_field :varietal_id %>
+    <%= f.number_field :varietal_id %>
   </div>
-  <div class="field">
-    <%= f.label :integer %><br>
-    <%= f.text_field :integer %>
-  </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :harvest_id %><br>
-    <%= f.text_field :harvest_id %>
+    <%= f.number_field :harvest_id %>
   </div>
-  <div class="field">
-    <%= f.label :integer %><br>
-    <%= f.text_field :integer %>
-  </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :preparation_id %><br>
-    <%= f.text_field :preparation_id %>
+    <%= f.number_field :preparation_id %>
   </div>
-  <div class="field">
-    <%= f.label :integer %><br>
-    <%= f.text_field :integer %>
-  </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :drying_id %><br>
-    <%= f.text_field :drying_id %>
+    <%= f.number_field :drying_id %>
   </div>
-  <div class="field">
-    <%= f.label :integer %><br>
-    <%= f.text_field :integer %>
-  </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :roast_id %><br>
-    <%= f.text_field :roast_id %>
-  </div>
-  <div class="field">
-    <%= f.label :integer %><br>
-    <%= f.text_field :integer %>
+    <%= f.number_field :roast_id %>
   </div>
   <div class="actions">
     <%= f.submit %>
   </div>
+  </div>
+</div>
 <% end %>
