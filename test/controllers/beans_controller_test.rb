@@ -18,7 +18,7 @@ class BeansControllerTest < ActionController::TestCase
 
   test "should create bean" do
     assert_difference('Bean.count') do
-      post :create, bean: { cultivation_id: @bean.cultivation_id, drying_id: @bean.drying_id, harvest_id: @bean.harvest_id, location_id: @bean.location_id, name: @bean.name, preparation_id: @bean.preparation_id, roast_id: @bean.roast_id, terrain_id: @bean.terrain_id, varietal_id: @bean.varietal_id, weather_id: @bean.weather_id }
+      post :create, bean: { drying: @bean.drying, name: @bean.name, preparation: @bean.preparation, producer_id: @bean.producer_id, roast: @bean.roast, roaster_id: @bean.roaster_id, varietal: @bean.varietal }
     end
 
     assert_redirected_to bean_path(assigns(:bean))
@@ -35,7 +35,7 @@ class BeansControllerTest < ActionController::TestCase
   end
 
   test "should update bean" do
-    patch :update, id: @bean, bean: { cultivation_id: @bean.cultivation_id, drying_id: @bean.drying_id, harvest_id: @bean.harvest_id, location_id: @bean.location_id, name: @bean.name, preparation_id: @bean.preparation_id, roast_id: @bean.roast_id, terrain_id: @bean.terrain_id, varietal_id: @bean.varietal_id, weather_id: @bean.weather_id }
+    patch :update, id: @bean, bean: { drying: @bean.drying, name: @bean.name, preparation: @bean.preparation, producer_id: @bean.producer_id, roast: @bean.roast, roaster_id: @bean.roaster_id, varietal: @bean.varietal }
     assert_redirected_to bean_path(assigns(:bean))
   end
 

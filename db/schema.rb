@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151231032615) do
+ActiveRecord::Schema.define(version: 20160106052943) do
 
   create_table "articles", force: :cascade do |t|
     t.string   "title"
@@ -22,17 +22,14 @@ ActiveRecord::Schema.define(version: 20151231032615) do
 
   create_table "beans", force: :cascade do |t|
     t.string   "name"
-    t.integer  "location_id"
-    t.integer  "terrain_id"
-    t.integer  "weather_id"
-    t.integer  "cultivation_id"
-    t.integer  "varietal_id"
-    t.integer  "harvest_id"
-    t.integer  "preparation_id"
-    t.integer  "drying_id"
-    t.integer  "roast_id"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
+    t.integer  "producer_id"
+    t.integer  "roaster_id"
+    t.string   "varietal"
+    t.string   "preparation"
+    t.string   "drying"
+    t.string   "roast"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "dryings", force: :cascade do |t|
@@ -80,6 +77,24 @@ ActiveRecord::Schema.define(version: 20151231032615) do
     t.integer  "flavour_profile_id"
     t.datetime "created_at",         null: false
     t.datetime "updated_at",         null: false
+  end
+
+  create_table "producers", force: :cascade do |t|
+    t.string   "name"
+    t.decimal  "latitude"
+    t.decimal  "longitude"
+    t.string   "country"
+    t.string   "region"
+    t.integer  "elevation_min"
+    t.integer  "elevation_max"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
+
+  create_table "roasters", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "roasts", force: :cascade do |t|

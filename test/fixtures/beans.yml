@@ -2,24 +2,18 @@
 
 one:
   name: MyString
-  location_id: 1
-  terrain_id: 1
-  weather_id: 1
-  cultivation_id: 1
-  varietal_id: 1
-  harvest_id: 1
-  preparation_id: 1
-  drying_id: 1
-  roast_id: 1
+  producer_id: 1
+  roaster_id: 1
+  varietal: MyString
+  preparation: MyString
+  drying: MyString
+  roast: MyString
 
 two:
   name: MyString
-  location_id: 1
-  terrain_id: 1
-  weather_id: 1
-  cultivation_id: 1
-  varietal_id: 1
-  harvest_id: 1
-  preparation_id: 1
-  drying_id: 1
-  roast_id: 1
+  producer_id: 1
+  roaster_id: 1
+  varietal: MyString
+  preparation: MyString
+  drying: MyString
+  roast: MyString

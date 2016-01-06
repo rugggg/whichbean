@@ -1,13 +1,18 @@
 Rails.application.routes.draw do
+  resources :roasters
+  resources :producers
+  resources :beans
+  resources :roasters
+  resources :producers
+  resources :beans
+  resources :roasters
+  resources :producers
+  resources :beans
   resources :beans
   resources :roasts
   resources :preparations
-  resources :varietals
   resources :terrains
-  resources :terrains
-  resources :roasts
   resources :beans
-  resources :preparations
   resources :beans
   resources :beans
   resources :locations
@@ -18,11 +23,7 @@ Rails.application.routes.draw do
   resources :dryings
   resources :harvests
   resources :locations
-  resources :locations
   resources :harvests
-  resources :harvests
-  resources :dryings
-  resources :flavour_profiles
   resources :beans
   resources :beans
   get 'welcome/index'

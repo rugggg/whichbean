@@ -6,48 +6,33 @@
 </p>
 
 <p>
-  <strong>Location:</strong>
-  <%= @bean.location_id %>
+  <strong>Producer:</strong>
+  <%= @bean.producer_id %>
 </p>
 
 <p>
-  <strong>Terrain:</strong>
-  <%= @bean.terrain_id %>
-</p>
-
-<p>
-  <strong>Weather:</strong>
-  <%= @bean.weather_id %>
-</p>
-
-<p>
-  <strong>Cultivation:</strong>
-  <%= @bean.cultivation_id %>
+  <strong>Roaster:</strong>
+  <%= @bean.roaster_id %>
 </p>
 
 <p>
   <strong>Varietal:</strong>
-  <%= @bean.varietal_id %>
-</p>
-
-<p>
-  <strong>Harvest:</strong>
-  <%= @bean.harvest_id %>
+  <%= @bean.varietal %>
 </p>
 
 <p>
   <strong>Preparation:</strong>
-  <%= @bean.preparation_id %>
+  <%= @bean.preparation %>
 </p>
 
 <p>
   <strong>Drying:</strong>
-  <%= @bean.drying_id %>
+  <%= @bean.drying %>
 </p>
 
 <p>
   <strong>Roast:</strong>
-  <%= @bean.roast_id %>
+  <%= @bean.roast %>
 </p>
 
 <%= link_to 'Edit', edit_bean_path(@bean) %> |

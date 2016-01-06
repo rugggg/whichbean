@@ -38,7 +38,9 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
 	  	<li class="<%= 'active' if current_page?(root_path) %>"><%= link_to "Map", root_path %></li>
-	  	<li class="<%= 'active' if current_page?(Bean) %>"><%= link_to "Bean", Bean %></li>
+	  	<li class="<%= 'active' if current_page?(Bean) %>"><%= link_to "Beans", Bean %></li>
+      <li class="<%= 'active' if current_page?(Producer) %>"><%= link_to "Producers", Producer %></li>
+      <li class="<%= 'active' if current_page?(Roaster) %>"><%= link_to "Roasters", Roaster %></li>
 	  </ul>
       <form class="navbar-form navbar-right" role="search">
         <div class="form-group">

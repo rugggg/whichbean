@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Producers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th>Country</th>
+      <th>Region</th>
+      <th>Elevation min</th>
+      <th>Elevation max</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @producers.each do |producer| %>
+      <tr>
+        <td><%= producer.name %></td>
+        <td><%= producer.latitude %></td>
+        <td><%= producer.longitude %></td>
+        <td><%= producer.country %></td>
+        <td><%= producer.region %></td>
+        <td><%= producer.elevation_min %></td>
+        <td><%= producer.elevation_max %></td>
+        <td><%= link_to 'Show', producer %></td>
+        <td><%= link_to 'Edit', edit_producer_path(producer) %></td>
+        <td><%= link_to 'Destroy', producer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Producer', new_producer_path %>

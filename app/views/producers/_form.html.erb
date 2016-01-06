@@ -1,0 +1,45 @@
+<%= form_for(@producer) do |f| %>
+  <% if @producer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@producer.errors.count, "error") %> prohibited this producer from being saved:</h2>
+
+      <ul>
+      <% @producer.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :latitude %><br>
+    <%= f.text_field :latitude %>
+  </div>
+  <div class="field">
+    <%= f.label :longitude %><br>
+    <%= f.text_field :longitude %>
+  </div>
+  <div class="field">
+    <%= f.label :country %><br>
+    <%= f.text_field :country %>
+  </div>
+  <div class="field">
+    <%= f.label :region %><br>
+    <%= f.text_field :region %>
+  </div>
+  <div class="field">
+    <%= f.label :elevation_min %><br>
+    <%= f.number_field :elevation_min %>
+  </div>
+  <div class="field">
+    <%= f.label :elevation_max %><br>
+    <%= f.number_field :elevation_max %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

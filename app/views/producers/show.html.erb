@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @producer.name %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @producer.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @producer.longitude %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @producer.country %>
+</p>
+
+<p>
+  <strong>Region:</strong>
+  <%= @producer.region %>
+</p>
+
+<p>
+  <strong>Elevation min:</strong>
+  <%= @producer.elevation_min %>
+</p>
+
+<p>
+  <strong>Elevation max:</strong>
+  <%= @producer.elevation_max %>
+</p>
+
+<%= link_to 'Edit', edit_producer_path(@producer) %> |
+<%= link_to 'Back', producers_path %>

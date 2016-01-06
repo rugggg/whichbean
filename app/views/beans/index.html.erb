@@ -6,12 +6,9 @@
   <thead>
     <tr>
       <th>Name</th>
-      <th>Location</th>
-      <th>Terrain</th>
-      <th>Weather</th>
-      <th>Cultivation</th>
+      <th>Producer</th>
+      <th>Roaster</th>
       <th>Varietal</th>
-      <th>Harvest</th>
       <th>Preparation</th>
       <th>Drying</th>
       <th>Roast</th>
@@ -23,15 +20,12 @@
     <% @beans.each do |bean| %>
       <tr>
         <td><%= bean.name %></td>
-        <td><%= bean.location_id %></td>
-        <td><%= bean.terrain_id %></td>
-        <td><%= bean.weather_id %></td>
-        <td><%= bean.cultivation_id %></td>
-        <td><%= bean.varietal_id %></td>
-        <td><%= bean.harvest_id %></td>
-        <td><%= bean.preparation_id %></td>
-        <td><%= bean.drying_id %></td>
-        <td><%= bean.roast_id %></td>
+        <td><%= bean.producer_id %></td>
+        <td><%= bean.roaster_id %></td>
+        <td><%= bean.varietal %></td>
+        <td><%= bean.preparation %></td>
+        <td><%= bean.drying %></td>
+        <td><%= bean.roast %></td>
         <td><%= link_to 'Show', bean %></td>
         <td><%= link_to 'Edit', edit_bean_path(bean) %></td>
         <td><%= link_to 'Destroy', bean, method: :delete, data: { confirm: 'Are you sure?' } %></td>

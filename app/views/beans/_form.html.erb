@@ -10,51 +10,36 @@
       </ul>
     </div>
   <% end %>
-<div class="container">
- <div class="form-group">
-  <div class="form-group">
+
+  <div class="field">
     <%= f.label :name %><br>
     <%= f.text_field :name %>
   </div>
-  <div class="form-group">
-    <%= f.label :location_id %><br>
-    <%= f.number_field :location_id %>
+  <div class="field">
+    <%= f.label :producer_id %><br>
+    <%= f.number_field :producer_id %>
   </div>
-  <div class="form-group">
-    <%= f.label :terrain_id %><br>
-    <%= f.number_field :terrain_id %>
+  <div class="field">
+    <%= f.label :roaster_id %><br>
+    <%= f.number_field :roaster_id %>
   </div>
-  <div class="form-group">
-    <%= f.label :weather_id %><br>
-    <%= f.number_field :weather_id %>
+  <div class="field">
+    <%= f.label :varietal %><br>
+    <%= f.text_field :varietal %>
   </div>
-  <div class="form-group">
-    <%= f.label :cultivation_id %><br>
-    <%= f.number_field :cultivation_id %>
+  <div class="field">
+    <%= f.label :preparation %><br>
+    <%= f.text_field :preparation %>
   </div>
-  <div class="form-group">
-    <%= f.label :varietal_id %><br>
-    <%= f.number_field :varietal_id %>
+  <div class="field">
+    <%= f.label :drying %><br>
+    <%= f.text_field :drying %>
   </div>
-  <div class="form-group">
-    <%= f.label :harvest_id %><br>
-    <%= f.number_field :harvest_id %>
-  </div>
-  <div class="form-group">
-    <%= f.label :preparation_id %><br>
-    <%= f.number_field :preparation_id %>
-  </div>
-  <div class="form-group">
-    <%= f.label :drying_id %><br>
-    <%= f.number_field :drying_id %>
-  </div>
-  <div class="form-group">
-    <%= f.label :roast_id %><br>
-    <%= f.number_field :roast_id %>
+  <div class="field">
+    <%= f.label :roast %><br>
+    <%= f.text_field :roast %>
   </div>
   <div class="actions">
     <%= f.submit %>
   </div>
-  </div>
-</div>
 <% end %>
