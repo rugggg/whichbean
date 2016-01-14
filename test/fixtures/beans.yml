@@ -7,7 +7,7 @@ one:
   varietal: MyString
   preparation: MyString
   drying: MyString
-  roast: MyString
+  roast_id: 1
 
 two:
   name: MyString
@@ -16,4 +16,4 @@ two:
   varietal: MyString
   preparation: MyString
   drying: MyString
-  roast: MyString
+  roast_id: 1

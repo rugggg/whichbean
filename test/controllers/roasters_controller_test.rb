@@ -18,7 +18,7 @@ class RoastersControllerTest < ActionController::TestCase
 
   test "should create roaster" do
     assert_difference('Roaster.count') do
-      post :create, roaster: { name: @roaster.name }
+      post :create, roaster: { address: @roaster.address, country: @roaster.country, latitude: @roaster.latitude, longitude: @roaster.longitude, name: @roaster.name, region: @roaster.region, zip: @roaster.zip }
     end
 
     assert_redirected_to roaster_path(assigns(:roaster))
@@ -35,7 +35,7 @@ class RoastersControllerTest < ActionController::TestCase
   end
 
   test "should update roaster" do
-    patch :update, id: @roaster, roaster: { name: @roaster.name }
+    patch :update, id: @roaster, roaster: { address: @roaster.address, country: @roaster.country, latitude: @roaster.latitude, longitude: @roaster.longitude, name: @roaster.name, region: @roaster.region, zip: @roaster.zip }
     assert_redirected_to roaster_path(assigns(:roaster))
   end
 

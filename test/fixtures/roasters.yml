@@ -2,6 +2,18 @@
 
 one:
   name: MyString
+  latitude: 9.99
+  longitude: 9.99
+  country: MyString
+  region: MyString
+  address: MyString
+  zip: 1
 
 two:
   name: MyString
+  latitude: 9.99
+  longitude: 9.99
+  country: MyString
+  region: MyString
+  address: MyString
+  zip: 1

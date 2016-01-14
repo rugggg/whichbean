@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160106052943) do
+ActiveRecord::Schema.define(version: 20160114051737) do
 
   create_table "articles", force: :cascade do |t|
     t.string   "title"
@@ -27,56 +27,9 @@ ActiveRecord::Schema.define(version: 20160106052943) do
     t.string   "varietal"
     t.string   "preparation"
     t.string   "drying"
-    t.string   "roast"
+    t.integer  "roast_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
-  end
-
-  create_table "dryings", force: :cascade do |t|
-    t.string   "method"
-    t.integer  "flavour_profile_id"
-    t.datetime "created_at",         null: false
-    t.datetime "updated_at",         null: false
-  end
-
-  create_table "flavour_profiles", force: :cascade do |t|
-    t.string   "body"
-    t.integer  "fruit_notes"
-    t.integer  "spice_notes"
-    t.integer  "chocolate_notes"
-    t.integer  "grain_notes"
-    t.integer  "roast_notes"
-    t.integer  "floral_notes"
-    t.integer  "nut_notes"
-    t.integer  "sugar_notes"
-    t.integer  "savory_notes"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
-  end
-
-  create_table "harvests", force: :cascade do |t|
-    t.integer  "ripeness"
-    t.integer  "flavour_profile_id"
-    t.datetime "created_at",         null: false
-    t.datetime "updated_at",         null: false
-  end
-
-  create_table "locations", force: :cascade do |t|
-    t.string   "farm_name"
-    t.decimal  "latitude"
-    t.decimal  "longitude"
-    t.integer  "terrain_id"
-    t.integer  "weather_id"
-    t.integer  "flavour_profile_id"
-    t.datetime "created_at",         null: false
-    t.datetime "updated_at",         null: false
-  end
-
-  create_table "preparations", force: :cascade do |t|
-    t.string   "type"
-    t.integer  "flavour_profile_id"
-    t.datetime "created_at",         null: false
-    t.datetime "updated_at",         null: false
   end
 
   create_table "producers", force: :cascade do |t|
@@ -93,32 +46,14 @@ ActiveRecord::Schema.define(version: 20160106052943) do
 
   create_table "roasters", force: :cascade do |t|
     t.string   "name"
+    t.decimal  "latitude"
+    t.decimal  "longitude"
+    t.string   "country"
+    t.string   "region"
+    t.string   "address"
+    t.integer  "zip"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  end
-
-  create_table "roasts", force: :cascade do |t|
-    t.string   "name"
-    t.integer  "strength"
-    t.integer  "flavour_profile_id"
-    t.datetime "created_at",         null: false
-    t.datetime "updated_at",         null: false
-  end
-
-  create_table "terrains", force: :cascade do |t|
-    t.integer  "elevation"
-    t.integer  "groundwater"
-    t.integer  "exposure"
-    t.integer  "flavour_profile_id"
-    t.datetime "created_at",         null: false
-    t.datetime "updated_at",         null: false
-  end
-
-  create_table "varietals", force: :cascade do |t|
-    t.string   "name"
-    t.integer  "flavour_profile_id"
-    t.datetime "created_at",         null: false
-    t.datetime "updated_at",         null: false
   end
 
 end

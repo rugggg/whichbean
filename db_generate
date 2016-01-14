@@ -2,9 +2,13 @@ bin/rails generate scaffold Bean name:string producer_id:integer roaster_id:inte
 
 bin/rails generate scaffold Producer name:string latitude:decimal longitude:decimal country:string region:string elevation_min:integer elevation_max:integer --force
 
-bin/rails generate scaffold Roaster name:string 
+bin/rails generate scaffold Roaster name:string latitude:decimal longitude:decimal country:string region:string address:string zip:integer
 
 rake db:drop
 rake db:migrate
 
 
+Producers.create(:name => "Reko Washing Station", :latitude => "Admin", :longitude => "Admin", :country => "Ethiopia", :region => "Kochere, Yirgacheffe", :elevation_min => 1850, :elevation_max => 2100)
+
+6.188311, 38.252542
+34.110388, -118.242428

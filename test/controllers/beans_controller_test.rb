@@ -18,7 +18,7 @@ class BeansControllerTest < ActionController::TestCase
 
   test "should create bean" do
     assert_difference('Bean.count') do
-      post :create, bean: { drying: @bean.drying, name: @bean.name, preparation: @bean.preparation, producer_id: @bean.producer_id, roast: @bean.roast, roaster_id: @bean.roaster_id, varietal: @bean.varietal }
+      post :create, bean: { drying: @bean.drying, name: @bean.name, preparation: @bean.preparation, producer_id: @bean.producer_id, roast_id: @bean.roast_id, roaster_id: @bean.roaster_id, varietal: @bean.varietal }
     end
 
     assert_redirected_to bean_path(assigns(:bean))
@@ -35,7 +35,7 @@ class BeansControllerTest < ActionController::TestCase
   end
 
   test "should update bean" do
-    patch :update, id: @bean, bean: { drying: @bean.drying, name: @bean.name, preparation: @bean.preparation, producer_id: @bean.producer_id, roast: @bean.roast, roaster_id: @bean.roaster_id, varietal: @bean.varietal }
+    patch :update, id: @bean, bean: { drying: @bean.drying, name: @bean.name, preparation: @bean.preparation, producer_id: @bean.producer_id, roast_id: @bean.roast_id, roaster_id: @bean.roaster_id, varietal: @bean.varietal }
     assert_redirected_to bean_path(assigns(:bean))
   end
 

@@ -69,6 +69,6 @@ class RoastersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def roaster_params
-      params.require(:roaster).permit(:name)
+      params.require(:roaster).permit(:name, :latitude, :longitude, :country, :region, :address, :zip)
     end
 end

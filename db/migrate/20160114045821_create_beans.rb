@@ -7,7 +7,7 @@ class CreateBeans < ActiveRecord::Migration
       t.string :varietal
       t.string :preparation
       t.string :drying
-      t.string :roast
+      t.integer :roast_id
 
       t.timestamps null: false
     end

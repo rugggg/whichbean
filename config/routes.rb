@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
   resources :roasters
+  resources :roasters
+  resources :roasters
+  resources :producers
+  resources :beans
+  resources :beans
+  resources :roasters
   resources :producers
   resources :beans
   resources :roasters
